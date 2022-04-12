@@ -1,0 +1,14 @@
+{
+  "name": "easyshop",
+  "version": "1.0.0",
+  "description": "MERN Shopping cart app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "author": "Archit Tripathi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
