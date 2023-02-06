@@ -38,25 +38,31 @@ const App = () => {
               <Route path=":id" element={<CartScreen />} />
             </Route>
             <Route path="/admin/userlist" element={<UserListScreen />} exact />
-            <Route
-              path="/admin/user/:id/edit"
-              element={<UserEditScreen />}
-              exact
-            />
+            <Route path="/admin/user/:id/edit" element={<UserEditScreen />} />
             <Route
               path="/admin/productlist"
               element={<ProductListScreen />}
               exact
             />
             <Route
+              path="/admin/productlist/:pageNumber"
+              element={<ProductListScreen />}
+              exact
+            />
+            <Route
               path="/admin/product/:id/edit"
               element={<ProductEditScreen />}
-              exact
             />
             <Route
               path="/admin/orderlist"
               element={<OrderListScreen />}
               exact
+            />
+            <Route path="/search/:keyword" element={<HomeScreen />} />
+            <Route path="/page/:pageNumber" element={<HomeScreen />} />
+            <Route
+              path="/search/:keyword/page/:pageNumber"
+              element={<HomeScreen />}
             />
             <Route path="/" element={<HomeScreen />} exact />
           </Routes>
